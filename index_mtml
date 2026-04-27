@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="Encabezado">
+        <h1>Jafet Miguel Tejada Torres</h1>
+        <nav>
+            <ul>
+                <li class="link"><a href="mascotas.html">Pets</a></li>
+                <li class="link"><a href="#proyectos">Proyectos</a></li>
+                <li class="link"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MENSAJE DE BIENVENIDA -->
+    <div id="mensaje-bienvenida">
+        Bienvenido a mi portafolio, aquí podrás encontrar información sobre mis proyectos y cómo contactarme. ¡Gracias por visitar!
+    </div>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section class="part_nav">
+        <img src="imagenes/fondo_nav.jpg" alt="Imagen de fondo" class="imagen_1">
+
+        <div class="contenido">
+            <h2>Sobre mí</h2>
+            <p>
+                Mi nombre es Jafet Tejada, soy estudiante de Ingeniería de Sistemas.
+                Soy una persona de aprendizaje rápido, siempre dispuesto a adquirir
+                nuevos conocimientos y enfrentar desafíos.
+            </p>
+
+            <button id="mostrar" onclick="MostrarInfo()">Mostrar más</button>
+
+            <div id="mas_informacion" class="mas_informacion">
+                <p>
+                    Fuera del ámbito académico, me apasiona el deporte,
+                    especialmente el fútbol, y mantengo un estilo de vida activo
+                    asistiendo regularmente al gimnasio.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="contenedor">
+
+        <!-- PROYECTOS -->
+        <section class="part_link" id="proyectos">
+            <h2>Proyectos</h2>
+
+            <div class="links">
+                <ul>
+                    <li class="link"><a href="#" target="_blank">Carpenter</a></li>
+                    <li class="link"><a href="#" target="_blank">Proyecto Python 1</a></li>
+                    <li class="link"><a href="#" target="_blank">Proyecto Python 2</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- GALERÍA (OPCIONAL PERO RECOMENDADA) -->
+        <section class="part_link">
+            <h2>Galería</h2>
+
+            <div class="galeria">
+                <img src="imagenes/img1.jpg" alt="Imagen 1">
+                <img src="imagenes/img2.jpg" alt="Imagen 2">
+                <img src="imagenes/img3.jpg" alt="Imagen 3">
+                <img src="imagenes/img4.jpg" alt="Imagen 4">
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="part_final" id="contacto">
+            <h2>Contacto</h2>
+
+            <form action="/enviar" method="post">
+                <div class="contenido_final">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="@gmail.com" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..."></textarea>
+
+                    <button type="submit">Enviar</button>
+
+                </div>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
