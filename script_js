@@ -1,0 +1,32 @@
+
+window.onload = function() {
+    mensajebienvenida();
+}
+
+function mensajebienvenida() {
+    var message = document.getElementById("mensaje-bienvenida");
+    if (message) {
+        message.style.display = "block";
+    
+        setTimeout(function() {
+            message.style.display = "none";
+        }, 5000);
+    }
+}
+
+function MostrarInfo() {
+    var mostrar = document.getElementById("mas_informacion");
+    var btn = document.getElementById("mostrar"); 
+
+    if (mostrar.style.display === "block") {
+        mostrar.style.display = "none"; 
+        btn.innerText = "Mostrar mas";
+    } else {
+        mostrar.style.display = "block";
+        btn.innerText = "Mostrar menos";
+    }
+}
+
+
+
+
